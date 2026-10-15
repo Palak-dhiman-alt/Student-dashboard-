@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Palak | Student Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body>
+<header><button class="tg" id="tg">Dark mode</button><div class="wrap"><div class="hd">
+<div class="logo"><img src="logo.png" alt="University logo"></div>
+<div><p class="uni">Welcome back</p><h1>Palak</h1><span class="roll">Roll No. 11242362</span></div>
+</div></div></header>
+<main>
+<div class="stats"><div class="stat"><b>86%</b><span>Attendance</span></div><div class="stat"><b>8.4</b><span>CGPA</span></div><div class="stat"><b id="npend">3</b><span>Pending tasks</span></div></div>
+
+<h2>Attendance record: October 2026</h2>
+<div class="card"><div class="sum"><div><b style="color:#1f9d55" id="np">0</b><span>Present</span></div><div><b style="color:var(--red)" id="na">0</b><span>Absent</span></div><div><b id="nr">0%</b><span>This month</span></div></div><div class="cal" id="cal"></div><div class="leg"><span><i style="background:#1f9d55"></i>Present</span><span><i style="background:var(--red)"></i>Absent</span><span><i style="background:var(--bg);border:1px solid var(--line)"></i>Holiday</span><span><i style="border:1px dashed var(--mute)"></i>Upcoming</span></div><p class="hint">Tap a past school day to switch it between present and absent. Changes are saved on this device.</p></div>
+
+<h2>Subject attendance</h2>
+<div class="sub" id="sub"></div>
+
+<h2>Today's classes</h2>
+<div class="card tt">
+<div class="slot"><time>9:00</time><div>Data Structures<small>Room 204</small></div></div>
+<div class="slot"><time>10:30</time><div>Database Systems<small>Lab 3</small></div></div>
+<div class="slot"><time>1:00</time><div>Communication Skills<small>Room 112</small></div></div>
+</div>
+
+<h2>My tasks</h2>
+<div class="card"><div id="tl"></div><div class="add"><input id="ti" placeholder="Add a task" aria-label="New task"><button id="tb">Add</button></div></div>
+
+<h2>Quick links</h2>
+<div class="links"><button>Fee status</button><button>Results</button><button>Library</button><button>Download forms</button></div>
+
+<h2>Notices</h2>
+<div class="card">
+<div class="notice">Mid-term datesheet released<br><small>2 days ago</small></div>
+<div class="notice">Library closed on Sunday<br><small>4 days ago</small></div>
+<div class="notice" style="margin:0">Submit assignment 3 by Friday<br><small>5 days ago</small></div>
+</div>
+</main>
+<div id="toast" class="toast" role="status"></div>
+<footer>Student dashboard for Palak, 11242362</footer>
+<script src="script.js"></script></body></html>
